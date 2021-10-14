@@ -4,7 +4,10 @@
 
 /*//////////// Fonts ////////////*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype'); 
+  }  
 
 /*//////////// Structure & Style ////////////*/
 
@@ -37,8 +40,7 @@ body{
     flex-direction : column;
     justify-content: center;
     align-items: center;
-    font-family : Roboto;
-}
+    font-family: 'Roboto', sans-serif;}
 
 .current_date{
     font-size : 200px;
@@ -153,7 +155,6 @@ table .current{
 
 .months_u:hover{
     color:rgb(227, 227, 253);
-
 }
 
 table{
@@ -177,12 +178,12 @@ th,td {
 
   /*//____________ Animation ____________//*/
 
+
  #form{
     animation: move 5.5s;
     animation-fill-mode: forwards;
     padding-top:100px;
   }
-
 
   .form_container{
       height : 200px;
@@ -198,7 +199,6 @@ th,td {
       text-align: center;
       font-family: Roboto;
       font-weight : 300;
-
   }
 
   .second_main_container{
@@ -209,7 +209,6 @@ th,td {
     animation: move2 1.5s;
     animation-fill-mode: forwards;
     margin-top :-500px;
-
   }
 
   @keyframes move {
@@ -223,7 +222,7 @@ th,td {
   
   /* Contact_form */
 
-  .back_agenda a{
+.back_agenda a{
     text-decoration : none;
     display : flex;
     flex-direction: row;
@@ -231,7 +230,7 @@ th,td {
     width : 90%;
   }
 
-  .back_agenda a:hover{
+.back_agenda a:hover{
     color:antiquewhite;
     text-decoration : none;
   }
@@ -278,7 +277,6 @@ input[type=submit] {
 input[type=text] {
     margin-top: 20px;
     font-family: monospace;
-
   }
   
 input[type=submit]:hover {
@@ -289,6 +287,5 @@ form{
     display: flex;
     flex-direction : column;
     align-items: center;
-
     justify-content: center;
   }
