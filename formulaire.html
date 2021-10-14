@@ -20,18 +20,15 @@
             </div>
             <div class="contact_form_container">
                 <form action="/action_page.php">
-
                     <div>
-                        <label for="fname">Date
-                            <input type="date" id="date" name="date" placeholder="Votre prénom"></label>
-                        <label for="lname">Départ</label>
-                        <input type="time" id="lname" name="lastname" placeholder="Votre nom">
-                        <label for="lname">Fin</label>
-                        <input type="time" id="lname" name="lastname" placeholder="Votre nom">
+                        <label for="date">Date <input type="date" id="date" name="eventdate"></label>
+                        <label for="startH">Départ</label>
+                        <input type="time" id="time" name="startH">
+                        <label for="endH">Fin</label>
+                        <input type="time" id="time" name="endH" >
                     </div>
-                    <input type="text" id="lname" name="lastname" placeholder="Nom de l'événement">
+                    <input type="text" id="evname" name="eventname" placeholder="Nom de l'événement">
                     <textarea id="subject" name="subject" placeholder="Informations" style="height:100px"></textarea>
-
                     <input type="submit" value="Envoyer">
                 </form>
             </div>
